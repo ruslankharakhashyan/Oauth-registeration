@@ -1,0 +1,143 @@
+// Here you can add other styles
+.navbar {
+
+  .form-inline {
+    i {
+      color: $navbar-color;
+    }
+    .form-control {
+      min-width: 250px;
+      color: $navbar-color;
+      border: 0;
+
+      &::placeholder {
+        color: $navbar-color;
+      }
+    }
+    .form-control::-webkit-input-placeholder { color: $navbar-color; }
+    .form-control:-moz-placeholder { color: $navbar-color; }
+    .form-control::-moz-placeholder { color: $navbar-color; }
+    .form-control:-ms-input-placeholder { color: $navbar-color; }
+  }
+}
+
+.sidebar {
+  .sidebar-header {
+    .img-avatar {
+      width: 80px;
+      margin: 20px auto 10px;
+      border-radius: 50em;
+    }
+
+    > .btn-group {
+      margin-top: 10px;
+    }
+
+    .btn-link {
+      color: $text-muted;
+
+      &:hover {
+        color: $sidebar-color;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-main {
+  flex: 1 0 auto;
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+  background: url('../../img/login-background.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.site-main:after {
+  content: '\00a0';
+  display: block;
+  margin-top: var(--space);
+  height: 0;
+  visibility: hidden;
+}
+.input-group-prepend {
+  padding: 0.375rem 0.75rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #22A8D8;
+  text-align: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e4e5e6;
+  display: flex;
+  align-items: center;
+}
+.input-group-append {
+  span {
+    color: #22A8D8;
+  }
+}
+.react-google-oauth-button-span {
+  margin-left: 6px;
+  margin-right: 6px;
+  vertical-align: top;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, arial, sans-serif;
+  letter-spacing: .21px;
+  line-height: 48px;
+}
+
+.react-google-oauth-button-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.react-google-oauth-button-iconWrapper {
+  padding: 15px;
+  background-color: white;
+  float: left;
+}
+
+.react-google-oauth-button-border {
+  border: 1px solid transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.react-google-oauth-button-main {
+  display: inline-block;
+  color: #fff;
+  height: 50px;
+  padding: 0px;
+  border-radius: 1px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.4s
+}
+
+.react-google-oauth-button-main:hover {
+  opacity: 0.5;
+}
+
+.react-google-oauth-button-main:active {
+  filter: brightness(80%);
+  opacity: 1;
+}
+
+.react-google-oauth-button-login {
+  background-color: #4285f4;
+  width: 240px;
+}
+
+.react-google-oauth-button-logout {
+  background-color: green;
+  width: 180px;
+}
